@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.main {
+	background: #f3f3f7;
+	height: 100%;
+	padding-top: 10px;
+}
+.user {
+	width: calc(100% - 20px);
+    background: #fff;
+    margin: 0 10px 10px;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px #e7e7e7;
+}
+.user .avatar {
+	width: 51px;
+	margin: 15px;
+}
+.user .wraper {
+	width: calc(100% - 81px);
+}
+.user .name {
+	line-height: 1;
+    margin-top: 14px;
+	margin-bottom: 10px;
+}
+.user .address img {
+	width: 13px;
+}
+.user .address p {
+	color: #333333;
+	line-height: 14px;
+	width: calc(100% - 20px);
+}
+
+.items li .icon {
+	width: 20px;
+	height: 20px;
+	margin: 15px 6px 15px 16px;
+}
+.items li .wraper {
+	padding: 14px 0;
+	width: calc(100% - 42px);
+}
+.items li .title {
+	line-height: 22px;
+}
+.items li .version {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -7px;
+	display: inline-block;
+	line-height: 1;
+	color: #666666;
+}
+.contact-item {
+	margin-top: 8px;
+}

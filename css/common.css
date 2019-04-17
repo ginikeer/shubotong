@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/*---reset---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a, a:visited {
+	text-decoration: none;
+	color: black;
+}
+p {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3 {
+	font-weight: 600;
+}
+
+
+
+/*---common---*/
+html, body {
+	height: 100%;
+}
+a:focus {
+	text-decoration: none;
+}
+.f0 {
+	font-size: 0;
+}
+.ibm {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ibt {
+	display: inline-block;
+	vertical-align: top;
+}
+.ibb {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.f16 {
+	font-size: 16px;
+}
+.f15 {
+	font-size: 15px;
+}
+.f14 {
+	font-size: 14px;
+}
+.f13 {
+	font-size: 13px;
+}
+.f12 {
+	font-size: 12px;
+}
+
+
+/*---footer-menu---*/
+.footer-menu {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 44px;
+	background: #f8f8f8;
+	font-size: 0;
+	border-top: 1px solid #dcdcdc;
+}
+.footer-menu li {
+	width: 50%;
+	display: inline-block;
+	font-size: 9px;
+	color: #666666;
+	text-align: center;
+}
+.footer-menu li a {
+	width: 100%;
+	display: inline-block;
+}
+.footer-menu li img {
+	width: 22px;
+	height: 21px;
+	display: block;
+	margin: 5px auto;
+}
+.footer-menu li p {
+	font-size: 9px;
+	line-height: 9px;
+	margin-bottom: 5px;
+}
+.footer-menu li.actived p {
+	color: #48a0dc;
+}
+
+/*---items---*/
+.items {
+	background: #fff;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+.items li {
+	position: relative;
+}
+.items li .wraper {
+	border-bottom: 1px solid #dcdcdc;
+}
+.items li:last-child .wraper {
+	border-bottom: none;
+}
+.items li .more {
+	position: absolute;
+	width: 7px;
+	height: 12px;
+	right: 15px;
+	top: 50%;
+	margin-top: -6px;
+}
