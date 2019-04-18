@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>数伯通</title>
+	<link href="" rel="SHORTCUT ICON">
+    <link href="http://libs.baidu.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/entrance.css">
+	
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/entrance.js"></script>
+</head>
+<body ng-controller="entranceCtrl">
+	<div class="main">
+		<div class="wraper">
+			<h1 class="title f15">请选择初始化帐套模块</h1>
+			<ul class="module f0">
+				<li class="ibm" ng-repeat="item in module_item" ng-click="module_choose($index)" ng-class="{actived: $index==focus}">
+					<div class="icon-wraper">
+						<img class="icon" ng-src="{{item.icon}}" alt="{{item.title}}">
+					</div>
+					<p>{{item.title}}</p>
+				</li>
+			</ul>
+		</div>
+		<a class="btn btn-start" href="index.html">开始使用</a>
+	</div>
+</body>

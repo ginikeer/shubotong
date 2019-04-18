@@ -468,16 +468,6 @@ angular.module('ui.bootstrap.carousel', [])
   $scope.isActive = function(slide) {
      return self.currentSlide === slide;
   };
-	
-// 	$scope.trialShow = function(slide) {
-// 		if( self.slides.length > 0 ) {
-// 			var index = slides.indexOf(slide);
-// 			console.log(index);
-// 			return index == self.slides.length;
-// 		} else {
-// 			return false;
-// 		}
-// 	}
 
   $scope.$watch('interval', restartTimer);
   $scope.$on('$destroy', resetTimer);
