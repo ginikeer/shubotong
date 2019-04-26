@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.banner img {
+	width: 100%;
+}
+.intro {
+	width: 338px;
+	margin: 20px auto 40px;
+	position: relative;
+}
+.intro img {
+	width: 100%;
+}
+.intro .btn-detail {
+	width: 82px;
+	height: 25px;
+	line-height: 25px;
+	background: #48a0dc;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 15px;
+	position: absolute;
+}
+.intro.excel img {
+	width: 326px;
+	display: block;
+	margin: 0 auto;
+}
+.intro.excel .btn-detail {
+	right: 47px;
+	bottom: 5px;
+}
+.intro.api .btn-detail {
+	left: 0;
+	bottom: 36px;
+}
+.intro.erp .btn-detail {
+	right: 52px;
+	bottom: 11px;
+}
+.footer img {
+	width: 100%;
+}
+
+.title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align: center;
+	display: block;
+	margin: 20px 0 3px;
+	letter-spacing: 1px;
+}
+.title.no-sub-title {
+	margin-bottom: 10px;
+}
+.sub-title {
+	font-size: 15px;
+	line-height: 25px;
+	color: #676a6c;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+.step {
+	width: 90.4%;
+	margin: 0 auto 22px;
+}
+.step dt {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+.step dd img {
+	width: 100%;
+}
+.step:last-child {
+	margin-bottom: 80px;
+}
+
+
+@media only screen and (max-width: 360px) {
+	.intro { width: 96%; }
+	.intro.excel img { width: 96%; }
+}
+@media only screen and (min-width: 768px) {
+	.intro { width: 60%; }
+	.intro.excel img { width: 100%; }
+}
