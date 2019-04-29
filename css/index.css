@@ -8,8 +8,16 @@
 .carousel {
 	height: 100%;
 }
+
+
+/* 方便pc上模拟有头部导航的高度 */
+/* .carousel-inner {
+	padding-top: 63px;
+} */
+
+
 .carousel-indicators {
-	bottom: 36px;
+	bottom: 26px;
 }
 .carousel-indicators li {
     width: 9px;
@@ -64,3 +72,78 @@
 	margin: 21px 12% 5px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
+
+
+/*iphone 4  screen-width:320px*/
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+	.title { padding-top: 4px; }
+	.sub-title { margin-top: 7px; }
+	.sample { width: 64%; margin: 10px 18% 5px; }
+	.carousel-indicators { bottom: 10px; }
+}
+
+
+/*iphone 5,5E screen-height:568px*/
+@media only screen and (device-width: 320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+	.title { padding-top: 12px; }
+	.sub-title { margin-top: 14px; }
+	.sample { width: 76%; margin: 21px 12% 5px; }
+	.carousel-indicators { bottom: 17px; }
+}
+
+
+/*三星Galaxy S5  screen-width:360px*/
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+	.carousel-indicators { bottom: 18px; }
+}
+
+
+/*iphone 6  screen-width:375px*/
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+	.carousel-indicators { bottom: 26px; }
+}
+
+
+/*iphone 6plus  screen-width:414px*/
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+	.carousel-indicators { bottom: 36px; }
+}
+
+
+@media only screen and (min-device-height: 800px) {
+	.carousel-indicators { bottom: 106px; }
+}
+
+
+/*iphone 6,7,8plus screen-width:414px */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3) {
+	.carousel-indicators { bottom: 36px; }
+}
+
+
+/*iphone X screen-width:375px, screen-hight: 812px */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.title { padding-top: 72px; }
+	.carousel-indicators { bottom: 106px; }
+}
+
+/*iphone XR screen-width:414px, screen-hight: 896px */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:2) {
+    .sample { width: 84%; margin: 40px 8% 5px; }
+	.carousel-indicators { bottom: 106px; }
+}
+
+
+/*iphone XS MAX screen-width:414px, screen-hight: 896px */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:3) {
+    .sample { width: 84%; margin: 40px 8% 5px; }
+	.carousel-indicators { bottom: 106px; }
+}
+
+
+/*iPad Mini  screen-width:768px*/
+@media only screen and (min-width: 768px) {
+	.sample { width: 66%; margin: 21px 17% 5px; }
+	.carousel-indicators { bottom: 36px; }
+}
+

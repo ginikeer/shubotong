@@ -66,8 +66,9 @@ h1, h2, h3 {
 html, body {
 	height: 100%;
 }
-a:focus {
+a:focus, a:hover {
 	text-decoration: none;
+	outline: none;
 }
 .f0 {
 	font-size: 0;
@@ -153,11 +154,20 @@ a:focus {
 .items li {
 	position: relative;
 }
+.items li:not(.no-hover):hover {
+	background: #eee;
+}
+.items li a, .items li a:visited {
+	color: #dcdcdc;
+}
 .items li .wraper {
 	border-bottom: 1px solid #dcdcdc;
 }
+.items li:not(.no-hover):hover .wraper {
+	border-bottom: 1px solid transparent;
+}
 .items li:last-child .wraper {
-	border-bottom: none;
+	border-bottom: 1px solid transparent;
 }
 .items li .more {
 	position: absolute;
